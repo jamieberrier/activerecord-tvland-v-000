@@ -14,6 +14,6 @@ class Actor < ActiveRecord::Base
     self.characters.collect do |character|
 
     end
-    "#{self.characters.name} - #{self.shows.name}"
+    #"#{self.characters.name} - #{self.shows.name}"
   end
 end
