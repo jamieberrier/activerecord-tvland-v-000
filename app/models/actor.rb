@@ -7,6 +7,7 @@ class Actor < ActiveRecord::Base
 
   end
 
+  # lists all of the characters that actor has.
   def list_roles
 
   end
