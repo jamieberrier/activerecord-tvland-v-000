@@ -11,8 +11,7 @@ class Actor < ActiveRecord::Base
   # list all of its shows and characters
   def list_roles
     #binding.pry
-    self.characters.collect do |character|
-      binding.pry
+    self.characters.each do |character|
       "#{character.name} - #{character.show.name}"
     end
     #"#{self.characters.name} - #{self.shows.name}"
