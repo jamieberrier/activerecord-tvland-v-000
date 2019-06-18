@@ -13,6 +13,5 @@ class Actor < ActiveRecord::Base
     self.characters.each do |character|
       "#{character.name} - #{character.show.name}"
     end
-    #"#{self.characters.name} - #{self.shows.name}"
   end
 end
