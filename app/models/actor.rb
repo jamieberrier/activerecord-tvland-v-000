@@ -4,7 +4,6 @@ class Actor < ActiveRecord::Base
 
   # returns the first and last name of an actor.
   def full_name
-    binding.pry
     "#{self.first_name} #{self.last_name}"
   end
 
